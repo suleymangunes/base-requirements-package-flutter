@@ -35,6 +35,10 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
 
+  # local storage caching
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -45,6 +49,10 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^2.0.0
+
+  # local storage caching
+  build_runner: ^2.3.3
+  hive_generator: ^2.0.0
 
   # splash screen
   flutter_native_splash: ^2.2.19

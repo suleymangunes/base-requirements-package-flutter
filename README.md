@@ -8,11 +8,9 @@ basic requirements package
 - localization
 - rouiting
 
-
 <br>
 <br>
 <br>
-
 
 ## Change App Name
 
@@ -27,7 +25,6 @@ Go to android manifest.xml.
 android / app / src / main / AndroidManifest.xml
 ```
 
-
 Change android label with your app name.
 
 ```
@@ -37,23 +34,24 @@ Change android label with your app name.
           android:icon="@mipmap/launcher_icon">
 ```
 
-
 #### Ios
 
 Go to Info.plist.
-
 
 ```
 ios / Runner / Info.plist
 ```
 
 Change bundle name with your app name.
+
 ```
 <key>CFBundleName</key>
 <string>App Name</string>
 ```
+
 </details>
 
+<p>
+  <img src="assets/readme/change_name.gif" width="200" hspace="20">
 
-
-
+</p>
