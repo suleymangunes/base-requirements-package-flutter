@@ -1,0 +1,12 @@
+{
+    "settingTitle": "Settings",
+    "theme": "Theme",
+    "appLang": "App Language",
+    "themeChoose": "Choose Theme",
+    "default": "System Default",
+    "light": "Light",
+    "dark": "Dark",
+    "cancel": "Cancel",
+    "ok": "Ok",
+    "langChoose": "Choose Language"
+}

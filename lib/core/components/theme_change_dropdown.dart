@@ -1,6 +1,7 @@
 import 'package:basic_requirements_package/core/init/cubit/radio_cubit.dart';
 import 'package:basic_requirements_package/core/init/cubit/theme_cubit.dart';
 import 'package:basic_requirements_package/core/constants/string/string_constants.dart';
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -36,7 +37,7 @@ class ThemeChangeDropdown extends StatelessWidget {
           context.read<RadioCubit>().changeValue(value.toString());
         },
       ),
-      title: const Text(StringConstants.sysDark),
+      title: const Text(StringConstants.sysDark).tr(),
     );
   }
 
@@ -49,7 +50,7 @@ class ThemeChangeDropdown extends StatelessWidget {
           context.read<RadioCubit>().changeValue(value.toString());
         },
       ),
-      title: const Text(StringConstants.sysLight),
+      title: const Text(StringConstants.sysLight).tr(),
     );
   }
 
@@ -62,7 +63,7 @@ class ThemeChangeDropdown extends StatelessWidget {
           context.read<RadioCubit>().changeValue(value.toString());
         },
       ),
-      title: const Text(StringConstants.sysDefault),
+      title: const Text(StringConstants.sysDefault).tr(),
     );
   }
 
@@ -94,7 +95,7 @@ class ThemeChangeDropdown extends StatelessWidget {
             break;
         }
       },
-      child: const Text(StringConstants.ok),
+      child: const Text(StringConstants.ok).tr(),
     );
   }
 
@@ -103,7 +104,7 @@ class ThemeChangeDropdown extends StatelessWidget {
       onPressed: () {
         Navigator.pop(context);
       },
-      child: const Text(StringConstants.cancel),
+      child: const Text(StringConstants.cancel).tr(),
     );
   }
 }

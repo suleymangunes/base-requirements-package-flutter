@@ -1,15 +1,18 @@
 class StringConstants {
   const StringConstants._();
 
-  static const String appTitle = 'Change Theme';
-  static const String themeChoose = 'Choose Theme';
-  static const String theme = 'Theme';
+  static const String appTitle = 'settingTitle';
+  static const String theme = 'theme';
+  static const String local = 'appLang';
+  static const String themeChoose = 'themeChoose';
+  static const String sysDefault = 'default';
+  static const String sysLight = 'light';
+  static const String sysDark = 'dark';
+  static const String cancel = 'cancel';
+  static const String ok = 'ok';
+  static const String langChoose = 'langChoose';
+
   static const String sysRadio = 'ThemeMode.system';
   static const String lightRadio = 'ThemeMode.light';
   static const String darkRadio = 'ThemeMode.dark';
-  static const String sysDefault = 'System Default';
-  static const String sysDark = 'Dark';
-  static const String sysLight = 'Light';
-  static const String ok = 'Ok';
-  static const String cancel = 'Cancel';
 }
