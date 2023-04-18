@@ -1,6 +1,6 @@
 Basic Requirements Package For Flutter Apps
 
-- Change app name ✓
+- [Change app name](#app-name) ✓ 
 - add app icon ✓
 - splash screen ✓
 - introduction page ×
@@ -12,6 +12,7 @@ Basic Requirements Package For Flutter Apps
 <br>
 <br>
 
+<a id="app-name"></a>
 ## Change App Name
 
 <details style="margin:15px">
