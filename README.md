@@ -1,12 +1,12 @@
 basic requirements package
 
-- Change app name
-- add app icon
-- splash screen
-- introduction page
-- theme
-- localization
-- rouiting
+- Change app name ✓
+- add app icon ✓
+- splash screen ×
+- introduction page ×
+- theme ×
+- localization ×
+- rouiting ×
 
 <br>
 <br>
