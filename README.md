@@ -1,12 +1,12 @@
 basic requirements package
 
-- Change app name
-- add app icon
-- splash screen
-- introduction page
-- theme
-- localization
-- rouiting
+- Change app name ✓
+- add app icon ✓
+- splash screen ×
+- introduction page ×
+- theme ×
+- localization ×
+- rouiting ×
 
 <br>
 <br>
@@ -69,7 +69,7 @@ dev_dependencies:
   flutter_launcher_icons: "^0.13.0"
 ```
 
-Add your app icon pubspec.yaml/assets.
+Add your app icon path in pubspec.yaml/assets.
 
 ```
 assets:
