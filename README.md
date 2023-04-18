@@ -1,10 +1,10 @@
-basic requirements package
+Basic Requirements Package For Flutter Apps
 
 - Change app name ✓
 - add app icon ✓
 - splash screen ✓
 - introduction page ×
-- theme ×
+- theme ✓
 - localization ×
 - rouiting ×
 
