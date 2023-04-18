@@ -115,3 +115,55 @@ flutter pub run flutter_launcher_icons
 <p>
   <img src="assets/readme/change_icon.gif" width="200" hspace="20">
 </p>
+
+## Splash Screen
+
+<details style="margin:15px">
+  <summary style="font-size:20px"> Usage</summary>
+  
+#### Android & Ios
+
+Add last version of flutter_native_splash package in dev_dependencies.
+
+```
+dependencies:
+  flutter_native_splash: ^2.2.19
+```
+
+Add your app logo pubspec.yaml/assets.
+
+```
+assets:
+    - assets/logo/
+```
+
+Add your Flutter Native Splash configuration to your pubspec.yaml
+
+```
+flutter_native_splash:
+  color: "#dcd5cd"
+  image: assets/logo/logo.png
+  color_dark: "#1b1106"
+  image_dark: assets/logo/logo_dark.png
+
+  android_12:
+    image: assets/logo/logo.png
+    icon_background_color: "#dcd5cd"
+    image_dark: assets/logo/logo_dark.png
+    icon_background_color_dark: "#1b1106"
+
+  web: false
+```
+
+After setting up the configuration, run the package.
+
+```
+flutter pub get
+flutter pub run flutter_native_splash:create
+```
+
+</details>
+
+<p>
+  <img src="assets/readme/splash_screen.gif" width="200" hspace="20">
+</p>
