@@ -23,7 +23,7 @@ class ThemeChangeDialogButton extends StatelessWidget {
     return showDialog(
       context: context,
       builder: (context) => const AlertDialog(
-        title: Text(StringConstants.themeChoose),
+        title: Text(StringConstants.themeChoose, textAlign: TextAlign.center),
         content: ThemeChangeDropdown(),
       ),
     );

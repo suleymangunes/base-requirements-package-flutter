@@ -126,7 +126,7 @@ flutter pub run flutter_launcher_icons
 Add last version of flutter_native_splash package in dev_dependencies.
 
 ```
-dependencies:
+dev_dependencies:
   flutter_native_splash: ^2.2.19
 ```
 
@@ -166,4 +166,36 @@ flutter pub run flutter_native_splash:create
 
 <p>
   <img src="assets/readme/splash_screen.gif" width="200" hspace="20">
+</p>
+
+## Change Theme with Caching
+
+<details style="margin:15px">
+  <summary style="font-size:20px"> Usage</summary>
+  
+#### Android & Ios
+
+Add last version of flutter_bloc package for state management and hive, hive_flutter for caching in dependencies.
+
+```
+dependencies:
+  flutter_bloc: ^8.1.2
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+```
+
+Add last version of build_runner package and hive_generator in dev dependencies.
+
+```
+dev_dependencies:
+  build_runner: ^2.3.3
+  hive_generator: ^2.0.0
+```
+
+Create theme classes for your themes and create cubit class for your thememode value. Create box with hive and make caching.
+
+</details>
+
+<p>
+  <img src="assets/readme/theme_caching.gif" width="200" hspace="20">
 </p>
