@@ -69,7 +69,7 @@ dev_dependencies:
   flutter_launcher_icons: "^0.13.0"
 ```
 
-Add your app icon pubspec.yaml/assets.
+Add your app icon path in pubspec.yaml/assets.
 
 ```
 assets:
