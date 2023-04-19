@@ -1,5 +1,5 @@
-import 'package:basic_requirements_package/core/components/changer_listtile_with_dropdown.dart';
-import 'package:basic_requirements_package/core/components/theme_change_dropdown.dart';
+import 'package:basic_requirements_package/core/components/lisstile/changer_listtile_with_dropdown.dart';
+import 'package:basic_requirements_package/core/components/dropdown/theme_change_dropdown.dart';
 import 'package:basic_requirements_package/core/constants/icon/icon_constants.dart';
 import 'package:basic_requirements_package/core/constants/string/string_constants.dart';
 import 'package:basic_requirements_package/main.dart';

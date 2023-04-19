@@ -9,6 +9,7 @@ class LightThemeCustom {
   LightThemeCustom() {
     theme = ThemeData.light().copyWith(
       //  CUSTOMIZE AREA
+      primaryColor: LightThemeColors._primaryColor,
       appBarTheme: const AppBarTheme(
         systemOverlayStyle: SystemUiOverlayStyle(
           statusBarColor: LightThemeColors._appBarBackground,
