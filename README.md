@@ -206,7 +206,7 @@ Create theme classes for your themes and create cubit class for your thememode v
 
 <p>
   <img src="assets/readme/theme_caching.gif" width="200" hspace="20">
-  <img src="assets/readme/theme_changing_intro.gif" width="200" hspace="20">
+  <img src="assets/readme/theme_changing_intro.gif" width="200" hspace="40">
 </p>
 
 <a id="localization"></a>
@@ -280,9 +280,9 @@ If you want to change locale, You change with context.
 
 </details>
 
-<p>
+<p float="left">
   <img src="assets/readme/localization.gif" width="200" hspace="20">
-  <img src="assets/readme/localization_intro.gif" width="200" hspace="20">
+  <img src="assets/readme/localization_intro.gif" width="200" hspace="40">
 </p>
 
 <a id="onboarding"></a>
