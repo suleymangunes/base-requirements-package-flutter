@@ -11,8 +11,11 @@ class StringConstants {
   static const String cancel = 'cancel';
   static const String ok = 'ok';
   static const String langChoose = 'langChoose';
-
   static const String sysRadio = 'ThemeMode.system';
   static const String lightRadio = 'ThemeMode.light';
   static const String darkRadio = 'ThemeMode.dark';
+  static const String skip = 'skip';
+  static const String done = 'done';
+  static const String introTitleFirst = 'introTitleFirst';
+  static const String introDescriptionFirst = 'introDescriptionFirst';
 }

@@ -8,5 +8,9 @@
     "dark": "Karanlık",
     "cancel": "Vazgeç",
     "ok": "Tamam",
-    "langChoose": "Dili Seç"
+    "langChoose": "Dili Seç",
+    "skip": "Geç",
+    "done": "Başla",
+    "introTitleFirst": "Tanıtım Bayfası Başlığı",
+    "introDescriptionFirst": "Uygulamaya hoşgeldin! Bu nasıl çalıştığıyla ilgili açıklamadır."
 }

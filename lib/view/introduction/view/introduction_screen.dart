@@ -14,8 +14,8 @@ class Introduction {
     pages: IntroPages.pageList,
     showSkipButton: true,
     showNextButton: false,
-    skip: const TextMediumTitle(text: 'Skip'),
-    done: const TextMediumTitle(text: 'Done'),
+    skip: const TextMediumTitle(text: 'skip'),
+    done: const TextMediumTitle(text: 'done'),
     onDone: () {
       IntroCaching.watchIntro();
       Benim().name();

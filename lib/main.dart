@@ -13,8 +13,9 @@ part 'core/init/localization/localization.dart';
 Future<void> main() async {
   await LocaleVariables._init();
   await ThemeCaching.init();
-  await IntroCaching.introInit();
+  await IntroCaching.init();
   Bloc.observer = CubitObserver();
+
   runApp(
     EasyLocalization(
       supportedLocales: LocaleVariables._localesList,

@@ -5,18 +5,16 @@ class IntroCaching {
 
   static final Box _intro = Hive.box('intro');
 
-  static Future<void> introInit() async {
+  static Future<void> init() async {
     await Hive.openBox('intro');
   }
 
   static String initialIntro() {
     switch (_intro.get('introWatched')) {
       case true:
-        // return const SettingView();
         return '/setting';
       default:
         return '/';
-      // return Introduction.intro;
     }
   }
 

@@ -8,5 +8,9 @@
     "dark": "Dark",
     "cancel": "Cancel",
     "ok": "Ok",
-    "langChoose": "Choose Language"
+    "langChoose": "Choose Language",
+    "skip": "Skip",
+    "done": "Done",
+    "introTitleFirst": "Title of Introduction Page",
+    "introDescriptionFirst": "Welcome to the app! This is a description of how it works."
 }
