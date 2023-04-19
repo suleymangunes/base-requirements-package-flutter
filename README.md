@@ -1,6 +1,6 @@
 Basic Requirements Package For Flutter Apps
 
-- [Change app name](#app-name) ✓ 
+- [Change app name](#app-name) ✓
 - add app icon ✓
 - splash screen ✓
 - introduction page ×
@@ -13,6 +13,7 @@ Basic Requirements Package For Flutter Apps
 <br>
 
 <a id="app-name"></a>
+
 ## Change App Name
 
 <details style="margin:15px">
@@ -199,4 +200,77 @@ Create theme classes for your themes and create cubit class for your thememode v
 
 <p>
   <img src="assets/readme/theme_caching.gif" width="200" hspace="20">
+</p>
+
+## Localization
+
+<details style="margin:15px">
+  <summary style="font-size:20px"> Usage</summary>
+  
+#### Android & Ios
+
+Add last version of easy_localization: ^3.0.1 in dependencies.
+
+```
+dependencies:
+  easy_localization: ^3.0.1
+```
+
+Create folder and add translation your local files.
+
+```
+assets
+└── translations
+    ├── en-US.json
+    └── tr-TR.json
+```
+
+Add assets localization directory in pubspec.yaml
+
+```
+flutter:
+  assets:
+    - assets/translations/
+```
+
+Add easy localization widget.
+
+```
+import 'package:flutter/material.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:easy_localization/easy_localization.dart';
+
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await EasyLocalization.ensureInitialized();
+
+  runApp(
+    EasyLocalization(
+      supportedLocales: [Locale('en', 'US'), Locale('de', 'DE')],
+      path: 'assets/translations', // <-- change the path of the translation files
+      fallbackLocale: Locale('en', 'US'),
+      child: MyApp()
+    ),
+  );
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      localizationsDelegates: context.localizationDelegates,
+      supportedLocales: context.supportedLocales,
+      locale: context.locale,
+      home: MyHomePage()
+    );
+  }
+}
+```
+
+If you want to change locale, You change with context.
+
+</details>
+
+<p>
+  <img src="assets/readme/localization.gif" width="200" hspace="20">
 </p>

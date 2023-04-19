@@ -3,6 +3,7 @@ import 'package:basic_requirements_package/core/components/theme_change_dropdown
 import 'package:basic_requirements_package/core/constants/icon/icon_constants.dart';
 import 'package:basic_requirements_package/core/constants/string/string_constants.dart';
 import 'package:basic_requirements_package/main.dart';
+import 'package:basic_requirements_package/product/widget/appbar/setting_appbar.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 
@@ -12,20 +13,17 @@ class SettingView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(
-          StringConstants.appTitle.tr(),
-          style: Theme.of(context).textTheme.headlineSmall,
-        ),
-      ),
+      appBar: const SettingAppbar(),
       body: Column(
         children: [
+          // theme listtile
           ChangerListtileWithDropdown(
             icon: IconConstants.themeIcon,
             title: StringConstants.theme.tr(),
             alertTitle: StringConstants.themeChoose.tr(),
             child: const ThemeChangeDropdown(),
           ),
+          // localiziton listtile
           ChangerListtileWithDropdown(
             icon: IconConstants.localizationIcon,
             title: StringConstants.local.tr(),
