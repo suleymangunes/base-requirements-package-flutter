@@ -6,11 +6,8 @@
 - [Onboarding/Introduction](#onboarding) ✓
 - [Change Theme With Caching](#theme) ✓
 - [Localization](#localization) ✓
-- [Rouiting](#routing) ×
+- [Rouiting](#routing) ✓
 
-<br>
-<br>
-<br>
 
 <a id="app-name"></a>
 
