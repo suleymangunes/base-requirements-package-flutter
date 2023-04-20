@@ -6,20 +6,6 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-// final router = GoRouter(
-//   initialLocation: IntroCaching.initialIntro(),
-//   routes: [
-//     GoRoute(
-//       path: '/',
-//       builder: (context, state) => Introduction.intro,
-//     ),
-//     GoRoute(
-//       path: '/setting',
-//       builder: (context, state) => const SettingView(),
-//     ),
-//   ],
-// );
-
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
@@ -31,14 +17,11 @@ class MyApp extends StatelessWidget {
           localizationsDelegates: context.localizationDelegates,
           supportedLocales: context.supportedLocales,
           locale: context.locale,
-          debugShowCheckedModeBanner: false,
           theme: LightThemeCustom().theme,
           darkTheme: DarkThemeCustom().theme,
           themeMode: themeState,
-          // home: const SettingView(),
-          // home: Introduction.intro,
-          // home: IntroCaching.initialIntro(),
           routerConfig: NavigationRoute.router,
+          debugShowCheckedModeBanner: false,
         );
       },
     );
