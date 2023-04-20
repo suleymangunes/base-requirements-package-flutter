@@ -343,42 +343,35 @@ P.s. Add your caching function on onDone callback.
   
 #### Android & Ios
 
-Add last version of introduction_screen in dependencies.
+Add last version of go_router in dependencies.
 
 ```
 dependencies:
-  introduction_screen: ^3.1.7
+  go_router: ^6.5.7
 ```
 
-Create PageViewModel Widget for your introduction pages.
+Create GoRouter Widget for your Navigation System.
 
 ```
-PageViewModel(
-  title: "This is a title",
-  body: "This is a description.",
-  image: const Center(
-    child: Text("Text", style: TextStyle(fontSize: 100.0)),
-  ),
-)
+final _router = GoRouter(
+  routes: [
+    GoRoute(
+      path: '/',
+      builder: (context, state) => HomeScreen(),
+    ),
+  ],
+);
 ```
 
-Create IntroductionScreen and configure with page list.
+Configure MaterialApp like this.
 
 ```
-IntroductionScreen(
-  pages: listPagesViewModel,
-  showNextButton: false,
-  done: const Text("Done"),
-  onDone: () {
-    // Caching and Routing
-  },
-)
+MaterialApp.router(
+  routerConfig: _router,
+);
 ```
-
-P.s. Add your caching function on onDone callback.
 
 </details>
-s
 <p>
-  <img src="assets/readme/onboarding.gif" width="200" hspace="20">
+  <img src="assets/readme/routing.gif" width="200" hspace="20">
 </p>
