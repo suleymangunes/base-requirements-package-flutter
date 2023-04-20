@@ -1,3 +1,4 @@
+import 'package:basic_requirements_package/view/_product/enum/route_enum.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 
 class IntroCaching {
@@ -12,9 +13,9 @@ class IntroCaching {
   static String initialIntro() {
     switch (_intro.get('introWatched')) {
       case true:
-        return '/setting';
+        return RouteEnum.setting.rawValue;
       default:
-        return '/';
+        return RouteEnum.intro.rawValue;
     }
   }
 
