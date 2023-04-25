@@ -1,8 +1,8 @@
 import 'package:basic_requirements_package/core/components/lisstile/changer_listtile_with_dropdown.dart';
 import 'package:basic_requirements_package/core/components/dropdown/theme_change_dropdown.dart';
 import 'package:basic_requirements_package/core/constants/icon/icon_constants.dart';
-import 'package:basic_requirements_package/core/constants/string/string_constants.dart';
 import 'package:basic_requirements_package/main.dart';
+import 'package:basic_requirements_package/product/init/lang/locale_keys.g.dart';
 import 'package:basic_requirements_package/product/widget/appbar/setting_appbar.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
@@ -19,15 +19,15 @@ class SettingView extends StatelessWidget {
           // theme listtile
           ChangerListtileWithDropdown(
             icon: IconConstants.themeIcon,
-            title: StringConstants.theme.tr(),
-            alertTitle: StringConstants.themeChoose.tr(),
+            title: LocaleKeys.themeTheme.tr(),
+            alertTitle: LocaleKeys.themeThemeChoose.tr(),
             child: const ThemeChangeDropdown(),
           ),
           // localiziton listtile
           ChangerListtileWithDropdown(
             icon: IconConstants.localizationIcon,
-            title: StringConstants.local.tr(),
-            alertTitle: StringConstants.langChoose.tr(),
+            title: LocaleKeys.localizationAppLang.tr(),
+            alertTitle: LocaleKeys.localizationLangChoose.tr(),
             child: changeLocalWithDropdown(context),
           ),
         ],

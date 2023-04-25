@@ -8,7 +8,6 @@
 - [Localization](#localization) ✓
 - [Rouiting](#routing) ✓
 
-
 <a id="app-name"></a>
 
 ## Change App Name
@@ -271,6 +270,12 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+```
+
+If you have many localization keys and are confused, key generation will help you. The code editor will automatically prompt keys
+
+```
+flutter pub run easy_localization:generate -O lib/product/init/lang -f keys -o locale_keys.g.dart --source-dir assets/translations
 ```
 
 If you want to change locale, You change with context.

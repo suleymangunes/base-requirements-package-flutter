@@ -1,6 +1,7 @@
 import 'package:basic_requirements_package/core/init/cubit/radio_cubit.dart';
 import 'package:basic_requirements_package/core/init/cubit/theme_cubit.dart';
 import 'package:basic_requirements_package/core/constants/string/string_constants.dart';
+import 'package:basic_requirements_package/product/init/lang/locale_keys.g.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -37,7 +38,7 @@ class ThemeChangeDropdown extends StatelessWidget {
           context.read<RadioCubit>().changeValue(value.toString());
         },
       ),
-      title: const Text(StringConstants.sysDark).tr(),
+      title: const Text(LocaleKeys.themeDark).tr(),
     );
   }
 
@@ -50,7 +51,7 @@ class ThemeChangeDropdown extends StatelessWidget {
           context.read<RadioCubit>().changeValue(value.toString());
         },
       ),
-      title: const Text(StringConstants.sysLight).tr(),
+      title: const Text(LocaleKeys.themeLight).tr(),
     );
   }
 
@@ -63,7 +64,7 @@ class ThemeChangeDropdown extends StatelessWidget {
           context.read<RadioCubit>().changeValue(value.toString());
         },
       ),
-      title: const Text(StringConstants.sysDefault).tr(),
+      title: const Text(LocaleKeys.themeDefault).tr(),
     );
   }
 
@@ -96,7 +97,7 @@ class ThemeChangeDropdown extends StatelessWidget {
         }
       },
       child: Text(
-        StringConstants.ok,
+        LocaleKeys.buttonOk,
         style: Theme.of(context).textTheme.titleSmall,
       ).tr(),
     );
@@ -108,7 +109,7 @@ class ThemeChangeDropdown extends StatelessWidget {
         Navigator.pop(context);
       },
       child: Text(
-        StringConstants.cancel,
+        LocaleKeys.buttonCancel,
         style: Theme.of(context).textTheme.titleSmall,
       ).tr(),
     );

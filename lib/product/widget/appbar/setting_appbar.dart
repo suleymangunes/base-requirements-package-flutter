@@ -1,4 +1,4 @@
-import 'package:basic_requirements_package/core/constants/string/string_constants.dart';
+import 'package:basic_requirements_package/product/init/lang/locale_keys.g.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 
@@ -11,7 +11,7 @@ class SettingAppbar extends StatelessWidget with PreferredSizeWidget {
   Widget build(BuildContext context) {
     return AppBar(
       title: Text(
-        StringConstants.appTitle.tr(),
+        LocaleKeys.settingTitle.tr(),
         style: Theme.of(context).textTheme.headlineSmall,
       ),
     );
