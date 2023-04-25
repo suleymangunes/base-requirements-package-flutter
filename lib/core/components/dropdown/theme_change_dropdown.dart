@@ -38,7 +38,10 @@ class ThemeChangeDropdown extends StatelessWidget {
           context.read<RadioCubit>().changeValue(value.toString());
         },
       ),
-      title: const Text(LocaleKeys.themeDark).tr(),
+      title: Text(
+        LocaleKeys.themeDark,
+        style: Theme.of(context).textTheme.titleMedium,
+      ).tr(),
     );
   }
 
@@ -51,7 +54,10 @@ class ThemeChangeDropdown extends StatelessWidget {
           context.read<RadioCubit>().changeValue(value.toString());
         },
       ),
-      title: const Text(LocaleKeys.themeLight).tr(),
+      title: Text(
+        LocaleKeys.themeLight,
+        style: Theme.of(context).textTheme.titleMedium,
+      ).tr(),
     );
   }
 
@@ -64,7 +70,10 @@ class ThemeChangeDropdown extends StatelessWidget {
           context.read<RadioCubit>().changeValue(value.toString());
         },
       ),
-      title: const Text(LocaleKeys.themeDefault).tr(),
+      title: Text(
+        LocaleKeys.themeDefault,
+        style: Theme.of(context).textTheme.titleMedium,
+      ).tr(),
     );
   }
 
@@ -98,7 +107,7 @@ class ThemeChangeDropdown extends StatelessWidget {
       },
       child: Text(
         LocaleKeys.buttonOk,
-        style: Theme.of(context).textTheme.titleSmall,
+        style: Theme.of(context).textTheme.labelLarge,
       ).tr(),
     );
   }
@@ -110,7 +119,7 @@ class ThemeChangeDropdown extends StatelessWidget {
       },
       child: Text(
         LocaleKeys.buttonCancel,
-        style: Theme.of(context).textTheme.titleSmall,
+        style: Theme.of(context).textTheme.labelLarge,
       ).tr(),
     );
   }

@@ -9,7 +9,6 @@ class LightThemeCustom {
 
   LightThemeCustom() {
     theme = ThemeData(
-      //  CUSTOMIZE AREA
       brightness: Brightness.light,
       primarySwatch: BuildColor().buildMaterialColor(LightThemeColors._primaryColor),
       appBarTheme: const AppBarTheme(
@@ -18,14 +17,6 @@ class LightThemeCustom {
           statusBarIconBrightness: Brightness.dark,
         ),
         centerTitle: true,
-        color: LightThemeColors._appBarBackground,
-        titleTextStyle: TextStyle(
-          color: Colors.black,
-        ),
-        iconTheme: IconThemeData(),
-      ),
-      iconTheme: const IconThemeData(
-        color: LightThemeIcon._iconColor,
       ),
     );
   }
