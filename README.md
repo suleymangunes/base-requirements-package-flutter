@@ -1,4 +1,4 @@
-# Basic Requirements Package For Flutter Apps
+# Base Requirements Packages For Flutter Apps
 
 - [Change app name](#app-name) ✓
 - [Change App Icon](#app-icon) ✓
